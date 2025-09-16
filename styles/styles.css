@@ -32,6 +32,7 @@ nav a {
 
 h1 {
     color: var(--primary-color);
+    padding: .5rem;
 }
 
 
@@ -42,30 +43,46 @@ img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
+body {
+    font-size: 16px;
+    font-family: roboto, sans-serif;
+}
 
 
 p {
-    padding: var(--padding-small);
+    padding: 0;
 }
-
 
 main {
     max-width: 840px;
 }
-
+main img{
+    width: 150px;
+    height: auto;
+    float: right;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    margin: 0 0 1rem 1rem;
+}
 
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: var(--bg-light);
-    color: var(--text-dark);
+    
     text-align: center;
 }
+aside img {
+    width: 200px;
+    height: auto;
+}
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150%;
+}
 
-
-footer {
+footer { 
     margin-top: 15px;
     border-top: 1px solid var(--border-color);
     text-align: center;
