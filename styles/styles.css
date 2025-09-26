@@ -1,10 +1,8 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 :root {
     --primary-color: darkblue;
@@ -12,29 +10,28 @@
     --text-dark: #333;
     --bg-light: #eee;
     --border-color: #000;
-    --image-width: 150px;
+    --image-width: 60px;
     --padding-small: 10px;
     --padding-medium: 20px;
 }
 
 
-nav {
-    background-color: var(--primary-color);
-    padding: var(--padding-small);
+body {
+    font-size: 16px;
+    font-family: roboto, sans-serif;
+    background-color: var(--bg-light);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
-
-nav a {
-    color: var(--secondary-color);
-    display: block;
-    padding: var(--padding-medium);
-}
-
 
 h1 {
-    color: var(--primary-color);
-    padding: .5rem;
+    border-bottom: 1px solid #222;
 }
 
+p {
+    padding: 1rem;
+}
 
 img {
     width: var(--image-width);
@@ -43,43 +40,63 @@ img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
-body {
-    font-size: 16px;
-    font-family: roboto, sans-serif;
+
+nav {
+   background-color: #042849;
+   padding: 1rem;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   max-width: 840px;    
+   margin: 0 auto;      
+}
+
+nav a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
 }
 
 
-p {
-    padding: 0;
+header, footer {
+    max-width: 840px;   
+    margin: 0 auto;
 }
 
 main {
     max-width: 840px;
+    grid-column: 2/3;
+    margin: 2rem 0;
 }
-main img{
-    width: 150px;
+
+main img {
+    width: 10rem;
     height: auto;
     float: right;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-    margin: 0 0 1rem 1rem;
+    margin: 1rem 0 1rem 1rem;
 }
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    
+    margin: 10px 0;
+    grid-column: 1/2;
+    grid-row: 1/2;
     text-align: center;
+    align-self: start;   
 }
+
 aside img {
     width: 200px;
     height: auto;
 }
+
 aside h2 {
-    position: static;
     margin-bottom: 10px;
 }
+
 
 footer { 
     margin-top: 15px;
@@ -87,11 +104,37 @@ footer {
     text-align: center;
 }
 
-/* Class Selectors */
+
+.grid {
+    display: grid;
+    align-items: flex-start;  
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    grid-template-columns: 1fr 3fr;
+    max-width: 840px;   
+    margin: 0 auto;
+}
+
+
 .box {
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 10%);
+    border: 1px solid #b71234;
     padding: 1rem;
-    background-color: #ddd;
+    background-color: #cccaca;
     color: #000;
+}
+
+.ident {
+    margin-left: 2rem;
+}
+
+
+ul {
+    list-style: none;
+    padding: 1rem;
+}
+
+a {
+    color: #00f;
 }
