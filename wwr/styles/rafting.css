@@ -30,7 +30,7 @@ body {
     padding: 0 16px;
 }
 
-/* Header */
+
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
@@ -94,7 +94,7 @@ header nav a {
     font-size: 2rem;
 }
 
-/* Bloc Happy Client */
+
 .hero article {
     position: absolute;
     bottom: 20px;
